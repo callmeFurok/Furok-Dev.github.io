@@ -1,181 +1,253 @@
-in<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alfredo Aguirre</title>
     <link rel="icon" type="image/png" href="images/logo_personal_alfredo.jpg" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="css/mediaquery.css" media="screen and (max-width:768px)"> -->
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container">
-            <figure class="logo">
-                <img src="images/logo_personal.png" height="50" alt="Logo de Alfredo Aguirre" />
-            </figure>
-            <nav class="menu">
-                <ol>
-                    <li>
-                        <a class="link" href="#portafolio">Portafolio</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#eventos">Experiencia</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#contacto">Trabajemos juntos</a>
-                    </li>
-                </ol>
-            </nav>
-        </div>
+      <div class="container">
+        <figure class="logo">
+          <img
+            src="images/logo_personal.png"
+            height="50"
+            alt="Logo de Alfredo Aguirre"
+          />
+        </figure>
+        <nav class="menu">
+          <ol>
+            <li>
+              <a class="link" href="#portafolio">Portafolio</a>
+            </li>
+            <li>
+              <a class="link" href="#eventos">Experiencia</a>
+            </li>
+            <li>
+              <a class="link" href="#contacto">Trabajemos juntos</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
     </header>
     <section class="hero">
-        <div class="container">
-            <h1>
-                Hola bienvenido a mi portafolio,actualmente me considero un programador novato, si te puedo ayudar en algo contactame.
-                19/08/2020
-            </h1>
-            <img class="hero-image" src="images/hero-perfil-furok.jpg" alt="imagen principal del sitio">
-        </div>
+      <div class="container">
+        <h1>
+          Hola bienvenido a mi portafolio,actualmente me considero un
+          programador novato, si te puedo ayudar en algo contactame. 19/08/2020
+        </h1>
+        <img
+          class="hero-image"
+          src="images/hero-perfil-furok.jpg"
+          alt="imagen principal del sitio"
+        />
+      </div>
     </section>
     <section id="portafolio" class="portfolio">
-        <div class="container">
-            <h2>Portafolio (Proyectos Realizados)</h2>
-            <article class="project">
-                <div class="project-details">
-                    <h3 class="project-title">Portafolio Web</h3>
-                    <h6 class="project-course">HTML5 - CSS3</h6>
-                    <p class="project-description">El portafolio web que tu estas observando es parte de lo aplicado con lo aprendido en el curso de desarollo web.
-                        El aplicar algo aprendido es una de las mejores manera de probar que a sabemos algo.
-                    </p>
-                </div>
-                <figure class="project-imageContainer">
-                    <img class="project-image" width="500" src="images/img-portafolio.png" alt="Portafolio web diseñado con html5 y css3">
-                </figure>
-            </article>
-            <article class="project">
-                <div class="project-details">
-                    <h3 class="project-title">Juego: Simon Dice</h3>
-                    <h6 class="project-course"> Javascript - HTML5 - CSS3</h6>
-                    <p class="project-description">El juego de Simon Dice, consiste en seguir una secuencia de colores que van apareciendo.
-                        Utilizando vanilla Javascript se implemento toda la funcionalidad que dara vida al juego. </p>
-                </div>
-                <figure class="project-imageContainer">
-                    <img class="project-image" width="500" src="images/simon-dice-juego.png" alt="Mini juego creado con vanilla Javascript">
-                </figure>
-            </article>
-        </div>
-
+      <div class="container">
+        <h2>Portafolio (Proyectos Realizados)</h2>
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Portafolio Web</h3>
+            <h6 class="project-course">HTML5 - CSS3</h6>
+            <p class="project-description">
+              El portafolio web que tu estas observando es parte de lo aplicado
+              con lo aprendido en el curso de desarollo web. El aplicar algo
+              aprendido es una de las mejores manera de probar que a sabemos
+              algo.
+            </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img
+              class="project-image"
+              width="500"
+              src="images/img-portafolio.png"
+              alt="Portafolio web diseñado con html5 y css3"
+            />
+          </figure>
+        </article>
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Juego: Simon Dice</h3>
+            <h6 class="project-course">Javascript - HTML5 - CSS3</h6>
+            <p class="project-description">
+              El juego de Simon Dice, consiste en seguir una secuencia de
+              colores que van apareciendo. Utilizando vanilla Javascript se
+              implemento toda la funcionalidad que dara vida al juego.
+            </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img
+              class="project-image"
+              src="images/simon-dice-juego.png"
+              alt="Mini juego creado con vanilla Javascript"
+            />
+          </figure>
+        </article>
+      </div>
     </section>
     <div class="container">
-        <h2 class="event-list-title">Más sobre mi experiencia</h2>
-        <h3 class="event-list-title">Cursos Relevantes tomados</h3>
+      <h2 class="event-list-title">Más sobre mi experiencia</h2>
+      <h3 class="event-list-title">Cursos Relevantes tomados</h3>
     </div>
     <section id="eventos" class="event-list">
-        <div class="container">
-            <article class="event">
-                <figure class="event-imageContainer">
-                    <img class="event-image" src="images/curso-desarrollo-web-online.png" width="500" />
-                </figure>
-                <div class="event-detail">
-                    <h3 class="event-title">Curso de Desarrollo Web Online</h3>
-                    <p class="event-description"> Curso de HTML y CSS para poder desarollar paginas web(Esta pagina fue desarrollada como proyecto del curso).</p>
-                </div>
-            </article>
-            <article class="event">
-                <figure class="event-imageContainer">
-                    <img class="event-image" src="images/javascript-curso.png" width="500" />
-                </figure>
-                <div class="event-detail">
-                    <h3 class="event-title">Curso de Javascript</h3>
-                    <p class="event-description">Javascript como lenguaje de programación a evolucionado a tal nivel, que se puede implementar en todas las áreas imaginables y sobretodo en desarollo frontend.</p>
-                </div>
-            </article>
-            <article class="event">
-                <figure class="event-imageContainer">
-                    <img class="event-image" src="images/Proyecto-Asincronismo-JavaScript.png" width="500" />
-                </figure>
-                <div class="event-detail">
-                    <h3 class="event-title">Curso de Asincronismo con JavaScript</h3>
-                    <p class="event-description">Aplicación de Callbacks, Promesas y Async/Await</p>
-                </div>
-            </article>
-            <article class="event">
-                <figure class="event-imageContainer">
-                    <img class="event-image" src="images/curso-python.jpg" width="500" />
-                </figure>
-                <div class="event-detail">
-                    <h3 class="event-title">Curso de Python</h3>
-                    <p class="event-description">Python como lenguaje de programación tiene muchas aplicaciones en diferentes areas.Y es muy utilizado hoy en dia</p>
-                </div>
-            </article>
-            <article class="event">
-                <figure class="event-imageContainer">
-                    <img class="event-image" src="images/git-and-github.png" width="500" />
-                </figure>
-                <div class="event-detail">
-                    <h3 class="event-title">Curso Profesional de Git y GitHub</h3>
-                    <p class="event-description">El conocer herramientas de versionamiento es vital, por eso saber Git y Github es indispensable hoy en dia.</p>
-                </div>
-            </article>
-        </div>
+      <div class="container">
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img
+              class="event-image"
+              src="images/curso-desarrollo-web-online.png"
+              width="500"
+            />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Curso de Desarrollo Web Online</h3>
+            <p class="event-description">
+              Curso de HTML y CSS para poder desarollar paginas web(Esta pagina
+              fue desarrollada como proyecto del curso).
+            </p>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img
+              class="event-image"
+              src="images/javascript-curso.png"
+              width="500"
+            />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Curso de Javascript</h3>
+            <p class="event-description">
+              Javascript como lenguaje de programación a evolucionado a tal
+              nivel, que se puede implementar en todas las áreas imaginables y
+              sobretodo en desarollo frontend.
+            </p>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img
+              class="event-image"
+              src="images/Proyecto-Asincronismo-JavaScript.png"
+              width="500"
+            />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Curso de Asincronismo con JavaScript</h3>
+            <p class="event-description">
+              Aplicación de Callbacks, Promesas y Async/Await
+            </p>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img
+              class="event-image"
+              src="images/curso-python.jpg"
+              width="500"
+            />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Curso de Python</h3>
+            <p class="event-description">
+              Python como lenguaje de programación tiene muchas aplicaciones en
+              diferentes areas.Y es muy utilizado hoy en dia
+            </p>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img
+              class="event-image"
+              src="images/git-and-github.png"
+              width="500"
+            />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Curso Profesional de Git y GitHub</h3>
+            <p class="event-description">
+              El conocer herramientas de versionamiento es vital, por eso saber
+              Git y Github es indispensable hoy en dia.
+            </p>
+          </div>
+        </article>
+      </div>
     </section>
     <section>
-        <div class="container">
-            <h2>Conocimientos generales</h2>
+      <div class="container">
+        <h2>Conocimientos generales</h2>
+      </div>
+      <div class="container knowledge">
+        <div class="knowledge-item">
+          <h3>Lenguajes de programación</h3>
+          <ul>
+            <li>Javascript - Avanzado</li>
+            <li>Python - Intermedio</li>
+            <li>Java - Basico</li>
+            <li>R - Basico</li>
+          </ul>
         </div>
-        <div class="container knowledge">
-            <div class="knowledge-item">
-                <h3>Lenguajes de programación</h3>
-                <ul>
-                    <li>Javascript - Avanzado </li>
-                    <li>Python - Intermedio</li>
-                    <li>Java - Basico</li>
-                    <li>R - Basico</li>
-                 </ul>
-            </div >  
-            <div class="knowledge-item">
-                <h3>Diseño Web</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Bootstrap</li>
-                </ul>
-            </div>
-           <div class="knowledge-item">
-            <h3>Base de datos</h3>
-            <ul>
-                <li>Postgresql</li>
-                <li>Mysql</li>
-            </ul>
-           </div>
-           <div class="knowledge-item">
-            <h3>Otros Conocimientos</h3>
-            <ul>
-                <li>Manejo de Entornos Linux: CentOS - Ubuntu</li>
-                <li>Shell Script    </li>
-                <li>Sevidores: Nginx - LAMP</li>
-            </ul>
-           </div>
+        <div class="knowledge-item">
+          <h3>Diseño Web</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Bootstrap</li>
+          </ul>
         </div>
+        <div class="knowledge-item">
+          <h3>Base de datos</h3>
+          <ul>
+            <li>Postgresql</li>
+            <li>Mysql</li>
+          </ul>
+        </div>
+        <div class="knowledge-item">
+          <h3>Otros Conocimientos</h3>
+          <ul>
+            <li>Manejo de Entornos Linux: CentOS - Ubuntu</li>
+            <li>Shell Script</li>
+            <li>Sevidores: Nginx - LAMP</li>
+          </ul>
+        </div>
+      </div>
     </section>
-    
-    <footer class="footer">
-        <section id="contacto" class="contact">
-            <div class="container">
-                <div>
-                    <h3>Contactame en mis redes sociales </h3>
-                </div>
-                <div class="social">
-                    <a href="https://twitter.com/thefurok" class="social-link twitter"></a>
-                    <a href="https://www.facebook.com/callmeFurok" class="social-link facebook"></a>
-                    <a href="https://github.com/Furok-Dev" class="social-link github"></a>
-                    <a href="https://www.instagram.com/thefurok/" class="social-link instagram"></a>
-                </div>
-            </div>
-        </section>
-    </footer>
-</body>
 
+    <footer class="footer">
+      <section id="contacto" class="contact">
+        <div class="container">
+          <div>
+            <h3>Contactame en mis redes sociales</h3>
+          </div>
+          <div class="social">
+            <a
+              href="https://twitter.com/thefurok"
+              class="social-link twitter"
+            ></a>
+            <a
+              href="https://www.facebook.com/callmeFurok"
+              class="social-link facebook"
+            ></a>
+            <a
+              href="https://github.com/Furok-Dev"
+              class="social-link github"
+            ></a>
+            <a
+              href="https://www.instagram.com/thefurok/"
+              class="social-link instagram"
+            ></a>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
