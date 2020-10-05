@@ -78,8 +78,7 @@ h2 {
 
 .hero-image {
   height: 100%;
-  width: 400px;
-
+  max-width: 100%;
   object-fit: contain;
 }
 
@@ -127,7 +126,7 @@ h2 {
 }
 
 .project-imageContainer img {
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 .header {
   background-color: #1b2127;
@@ -206,8 +205,8 @@ figure {
 }
 
 .event {
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -215,9 +214,8 @@ figure {
 }
 
 .event img {
-  width: 480px;
-  height: 200px;
-  object-fit: cover;
+  max-height: 250px;
+  object-position: 25% 25%;
 }
 
 .event-detail {
@@ -375,26 +373,43 @@ and for desktop first we start with the MQ most big
   }
   .project-title {
     font-size: 1.5em;
-    margin-bottom: .3em;
+    margin-bottom: 0.3em;
   }
 
   .project-course {
-    font-size: .7em;
-    margin:.4em 0;
+    font-size: 0.7em;
+    margin: 0.4em 0;
   }
   .project-description {
     font-size: 0.8em;
   }
+  .event {
+    width: auto;
+    flex-shrink: initial;
+  }
+  .event img {
+    width: 100%;
+  }
 
+  .knowledge{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* 480px third */
 @media screen and (max-width: 480px) {
+  .project-details {
+    width: auto;
+    font-size: 12px;
+  }
 
-    .project-details {
-        width: auto;
-        font-size: 12px;
-      }
+  .event-detail {
+    margin: 2em 0.5em 0.5em;
+  }
+  .knowledge{
+    grid-template-rows: repeat(2, 1fr);
+  }
+
 }
 
 /* 320px lasted*/
