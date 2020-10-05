@@ -187,14 +187,13 @@ figure {
   flex-shrink: 0;
 }
 
-.footer img {
-  vertical-align: middle;
-}
-
-.footer a {
+.footer {
+  text-align: center;
+  background-color: #242121;
+  display: block;
   color: white;
+  border: 1px solid transparent;
 }
-
 .event-list {
   display: flex;
   flex-wrap: wrap;
@@ -304,6 +303,7 @@ figure {
   max-width: 1000px;
   margin: 0 auto;
   display: inherit;
+  padding: 0 1em;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
@@ -391,7 +391,7 @@ and for desktop first we start with the MQ most big
     width: 100%;
   }
 
-  .knowledge{
+  .knowledge {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -406,10 +406,12 @@ and for desktop first we start with the MQ most big
   .event-detail {
     margin: 2em 0.5em 0.5em;
   }
-  .knowledge{
-    grid-template-rows: repeat(2, 1fr);
+  .contact {
+    height: auto;
+    padding: 1em 0;
+    text-align: center;
+    display: block;
   }
-
 }
 
 /* 320px lasted*/
