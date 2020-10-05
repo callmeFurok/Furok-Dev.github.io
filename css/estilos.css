@@ -80,6 +80,7 @@ h2 {
   height: 100%;
   max-width: 100%;
   object-fit: contain;
+  display: flex;
 }
 
 .portfolio {
@@ -314,23 +315,25 @@ figure {
 /*Diseño de la parte de conocimientos generales*/
 .knowledge {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /*los elementos ocuparan 3 columnas*/
+  grid-template-columns: repeat(2, 1fr); /*los elementos ocuparan 2 columnas*/
   grid-template-rows: repeat(2, 1fr); /*los elementos ocuparan 2 filas*/
 }
 
 .knowledge-item {
   margin: 3px;
-  width: 300px;
   padding-left: 50px;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
-  background: #f4fbff;
-  display: inline-block;
+  background: #ee680f;
+
   justify-content: center;
   align-items: center;
 }
 
+.knowledge-item h3 {
+  margin: .5em;
+}
 /* Here we implement responsive design for our page */
 /* Here we have the implementation of responsive design
 in this case we are started with desktop first
@@ -339,10 +342,34 @@ and for desktop first we start with the MQ most big
 
 /* 1024px first */
 @media screen and (max-width: 1024px) {
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  .hero-image {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    z-index: 2;
+    text-shadow: 1px 2px 2px #000000;
+  }
 }
 
 /* 768px second */
 @media screen and (max-width: 767px) {
+  .h1 {
+    text-shadow: 1px 2px 2px #000000;
+  }
   .header {
     display: block;
     height: auto;
@@ -398,6 +425,10 @@ and for desktop first we start with the MQ most big
 
 /* 480px third */
 @media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1em;
+    text-shadow: 1px 2px 2px #000000;
+  }
   .project-details {
     width: auto;
     font-size: 12px;
@@ -417,4 +448,11 @@ and for desktop first we start with the MQ most big
 /* 320px lasted*/
 
 @media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.3em;
+    text-shadow: 1px 2px 2px #000000;
+  }
+  .hero {
+    padding: 2em 1em;
+  }
 }
