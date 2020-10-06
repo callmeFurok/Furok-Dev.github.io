@@ -34,6 +34,7 @@ valores */
 body {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
+  box-sizing: border-box;
 }
 
 h1,
@@ -332,8 +333,25 @@ figure {
 }
 
 .knowledge-item h3 {
-  margin: .5em;
+  margin: 0.5em;
 }
+
+.burger-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(27, 33, 39, 0.8);
+  display: block;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top: 5px;
+  color: white;
+}
+
 /* Here we implement responsive design for our page */
 /* Here we have the implementation of responsive design
 in this case we are started with desktop first
@@ -349,26 +367,41 @@ and for desktop first we start with the MQ most big
     padding: 2em;
   }
   .hero-image {
-    position: absolute;
+    position: relative;
     z-index: 1;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     width: 100%;
+    height: 300px;
   }
+
   h1 {
     font-size: 2em;
-    text-align: center;
+    text-align: right;
     z-index: 2;
     text-shadow: 1px 2px 2px #000000;
+  }
+  .header a:hover {
+    background-color: white;
+    color: tomato;
   }
 }
 
 /* 768px second */
 @media screen and (max-width: 767px) {
+  .burger-button {
+    display: flex;
+  }
+
+  .hero-image {
+    position: relative;
+  }
   .h1 {
     text-shadow: 1px 2px 2px #000000;
+    text-align: center;
+    width: 50%;
   }
   .header {
     display: block;
@@ -383,9 +416,35 @@ and for desktop first we start with the MQ most big
 
   .header a {
     justify-content: center;
+    height: 40px;
+    font-size: 2em;
+  }
+  .header a:hover {
+    background-color: white;
+    color: tomato;
   }
   .header .logo {
     text-align: center;
+  }
+  .menu ol {
+    margin-bottom: 25em;
+  }
+
+  .menu {
+    position: fixed;
+    background-color: rgba(5, 111, 255, 0.8);
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+  }
+  .menu.is-active {
+    left: 0;
   }
   .project {
     display: block;
@@ -421,13 +480,21 @@ and for desktop first we start with the MQ most big
   .knowledge {
     grid-template-columns: repeat(2, 1fr);
   }
+  .knowledge-item {
+    padding-left: 1em;
+  }
 }
 
 /* 480px third */
 @media screen and (max-width: 480px) {
+  .hero-image {
+    display: none;
+  }
   h1 {
-    font-size: 1em;
+    font-size: 1.3em;
     text-shadow: 1px 2px 2px #000000;
+    width: 250px;
+    text-align: center;
   }
   .project-details {
     width: auto;
@@ -442,6 +509,9 @@ and for desktop first we start with the MQ most big
     padding: 1em 0;
     text-align: center;
     display: block;
+  }
+  .knowledge-item {
+    padding-left: 1em;
   }
 }
 

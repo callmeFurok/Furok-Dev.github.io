@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alfredo Aguirre</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" type="image/png" href="images/logo_personal_alfredo.jpg" />
     <link
       href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro"
@@ -13,6 +14,7 @@
   </head>
 
   <body>
+    <i class="icon-menu burger-button" id="burguer-menu"></i>
     <header class="header">
       <div class="container">
         <figure class="logo">
@@ -28,10 +30,10 @@
               <a class="link" href="#portafolio">Portafolio</a>
             </li>
             <li>
-              <a class="link" href="#eventos">Experiencia</a>
+              <a class="link" href="#experiencia">Experiencia</a>
             </li>
             <li>
-              <a class="link" href="#contacto">Trabajemos juntos</a>
+              <a class="link" href="#trabajemos">Trabajemos juntos</a>
             </li>
           </ol>
         </nav>
@@ -41,16 +43,18 @@
       <div class="container">
         <div class="container">
           <h1>
-            Hola bienvenido a mi portafolio,actualmente me considero un
-            programador novato, si te puedo ayudar en algo contactame. 
+            Hola bienvenido a mi <strong>portafolio</strong>,
+            actualmente me considero un
+            <strong>programador novato</strong>,
+             si te puedo ayudar en algo contactame.
           </h1>
         </div>
         <div class="container">
           <img
-          class="hero-image"
-          src="images/hero-perfil-furok.jpg"
-          alt="imagen principal del sitio"
-        />
+            class="hero-image"
+            src="images/hero-perfil-furok.jpg"
+            alt="imagen principal del sitio"
+          />
         </div>
       </div>
     </section>
@@ -96,11 +100,11 @@
         </article>
       </div>
     </section>
-    <div class="container">
+    <div class="container" id="experiencia">
       <h2 class="event-list-title">Más sobre mi experiencia</h2>
       <h3 class="event-list-title">Cursos Relevantes tomados</h3>
     </div>
-    <section id="eventos" class="event-list">
+    <section  class="event-list">
       <div class="container">
         <article class="event">
           <figure class="event-imageContainer">
@@ -165,7 +169,7 @@
       </div>
     </section>
     <section>
-      <div class="container">
+      <div class="container" id="trabajemos">
         <h2>Conocimientos generales</h2>
       </div>
       <div class="container knowledge">
@@ -203,7 +207,7 @@
         </div>
       </div>
     </section>
-    <section id="contacto" class="contact">
+    <section  class="contact">
       <div class="container">
         <div>
           <h3>Contactame en mis redes sociales</h3>
@@ -226,7 +230,8 @@
       </div>
     </section>
     <footer class="footer">
-      <p> Creado por Furok  el  19/08/2020 &copy; - 💻</p>
-    </footer
+      <p>Creado por Furok el 19/08/2020 &copy; - 💻</p>
+    </footer>
   </body>
+  <script src="./js/script.js"></script>
 </html>
