@@ -84,6 +84,14 @@ h2 {
   display: flex;
 }
 
+.header ol li .border {
+  height: initial;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin: 14px 3px;
+}
+
 .portfolio {
   background: #fafafa;
   padding: 20px;
@@ -189,6 +197,10 @@ figure {
   flex-shrink: 0;
 }
 
+.project,
+.event {
+  box-shadow: 1px 1px 10px 1px lightgray;
+}
 .footer {
   text-align: center;
   background-color: #242121;
@@ -360,6 +372,18 @@ and for desktop first we start with the MQ most big
 
 /* 1024px first */
 @media screen and (max-width: 1024px) {
+  h2:before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 20%;
+    font-size: 10px;
+    color: #026fff;
+    width: 20px;
+    height: 20px;
+    background-color: #026fff;
+    border-radius: 50%;
+  }
   .hero {
     height: auto;
     position: relative;
@@ -496,6 +520,12 @@ and for desktop first we start with the MQ most big
     width: 250px;
     text-align: center;
   }
+  h2:before {
+    width: 15px;
+    height: 15px;
+    left: -24px;
+  }
+
   .project-details {
     width: auto;
     font-size: 12px;
